@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #ffe4ec, #e8d9ff);
+    color: #4a304a;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(135deg, #e879b9, #a77bdb);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Menú de navegación */
+nav {
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #a04491;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e879b9;
+}
+
+/* Contenido principal */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Secciones */
+section {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(130, 75, 130, 0.15);
+}
+
+section h2 {
+    color: #b34d9a;
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f3b4da;
+    padding-bottom: 10px;
+}
+
+/* Foto personal */
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+figure img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #e9a6d0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+figure img:hover {
+    transform: scale(1.05);
+}
+
+figcaption {
+    margin-top: 10px;
+    color: #a04491;
+    font-style: italic;
+}
+
+/* Párrafos */
+section p {
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 12px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
